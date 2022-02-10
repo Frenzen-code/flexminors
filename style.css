@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid;
+    border-color: grey;
+    border-bottom-color: white;
+    border-right-color: white;
+    width: fit-content;
+    position: relative;
+
+}
+.container:after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: rgb(197, 188, 188);
+    z-index: -1;
+
+}
+
+
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.case, .case1, .case2, .case3, .case4{ 
+    background-color:rgb(226, 205, 205);
+    border: 1.5px dashed black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.case1 {
+    color: blue;
+}
+
+.case2{
+    color: green;
+}
+
+.case3{
+    color: red
+}
+.case4 {
+    border: 1.5px outset;
+    border-top: white solid;
+    border-left: white solid;
+    border-bottom: black solid;
+    border-right: black solid;
+}
+
+img {
+    max-width: 35x;
+    max-height: 35px;
+}
+
