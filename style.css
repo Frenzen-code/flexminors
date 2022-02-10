@@ -53,8 +53,21 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: relative;
 
 }
+.hidden {
+    background-color:rgb(226, 205, 205);
+    border: 1.5px dashed black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
 
 .case1 {
     color: blue;
@@ -67,7 +80,7 @@ body {
 .case3{
     color: red
 }
-.case4 {
+.hidden {
     border: 1.5px outset;
     border-top: white solid;
     border-left: white solid;
@@ -79,4 +92,23 @@ img {
     max-width: 35x;
     max-height: 35px;
 }
+
+.case1:hover .hidden {
+    display:none;
+}
+
+.case2:hover .hidden {
+    display:none;
+}
+
+.case3:hover .hidden {
+    display:none;
+}
+
+.case:hover .hidden {
+    display:none;
+}
+
+
+
 
